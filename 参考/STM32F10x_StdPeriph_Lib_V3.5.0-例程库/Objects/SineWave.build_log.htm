@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: D 6031, DY, LIC=W96Y8-3PXRE-GNGA5-G406C-5RI7A-KIXDG
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  D:\MDK5\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      UL2CM3.DLL V1.155.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\D6031\Desktop\STM32F10x_StdPeriph_Lib_V3.5.0\SineWave.uvprojx
+Project File Date:  05/06/2019
+
+<h2>Output:</h2>
+Build target 'SineWave'
+compiling main.c...
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(38): error:  #20: identifier "DAC_InitTypeDef" is undefined
+  DAC_InitTypeDef            DAC_InitStructure;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(39): error:  #20: identifier "DMA_InitTypeDef" is undefined
+  DMA_InitTypeDef            DMA_InitStructure;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(40): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+  TIM_TimeBaseInitTypeDef    TIM_TimeBaseStructure;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(84): warning:  #223-D: function "TIM_TimeBaseStructInit" declared implicitly
+    TIM_TimeBaseStructInit(&TIM_TimeBaseStructure); 
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(88): error:  #20: identifier "TIM_CounterMode_Up" is undefined
+    TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(89): warning:  #223-D: function "TIM_TimeBaseInit" declared implicitly
+    TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(92): warning:  #223-D: function "TIM_SelectOutputTrigger" declared implicitly
+    TIM_SelectOutputTrigger(TIM2, TIM_TRGOSource_Update);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(92): error:  #20: identifier "TIM_TRGOSource_Update" is undefined
+    TIM_SelectOutputTrigger(TIM2, TIM_TRGOSource_Update);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(95): error:  #20: identifier "DAC_Trigger_T2_TRGO" is undefined
+    DAC_InitStructure.DAC_Trigger = DAC_Trigger_T2_TRGO;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(96): error:  #20: identifier "DAC_WaveGeneration_None" is undefined
+    DAC_InitStructure.DAC_WaveGeneration = DAC_WaveGeneration_None;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(97): error:  #20: identifier "DAC_OutputBuffer_Disable" is undefined
+    DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Disable;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(98): warning:  #223-D: function "DAC_Init" declared implicitly
+    DAC_Init(DAC_Channel_1, &DAC_InitStructure);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(98): error:  #20: identifier "DAC_Channel_1" is undefined
+    DAC_Init(DAC_Channel_1, &DAC_InitStructure);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(101): error:  #20: identifier "DAC_Channel_2" is undefined
+    DAC_Init(DAC_Channel_2, &DAC_InitStructure);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(111): warning:  #223-D: function "DMA_DeInit" declared implicitly
+    DMA_DeInit(DMA2_Channel4);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(118): error:  #20: identifier "DMA_DIR_PeripheralDST" is undefined
+    DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralDST;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(120): error:  #20: identifier "DMA_PeripheralInc_Disable" is undefined
+    DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(121): error:  #20: identifier "DMA_MemoryInc_Enable" is undefined
+    DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(122): error:  #20: identifier "DMA_PeripheralDataSize_Word" is undefined
+    DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Word;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(123): error:  #20: identifier "DMA_MemoryDataSize_Word" is undefined
+    DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Word;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(124): error:  #20: identifier "DMA_Mode_Circular" is undefined
+    DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(125): error:  #20: identifier "DMA_Priority_High" is undefined
+    DMA_InitStructure.DMA_Priority = DMA_Priority_High;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(126): error:  #20: identifier "DMA_M2M_Disable" is undefined
+    DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(129): warning:  #223-D: function "DMA_Init" declared implicitly
+    DMA_Init(DMA2_Channel4, &DMA_InitStructure);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(131): warning:  #223-D: function "DMA_Cmd" declared implicitly
+    DMA_Cmd(DMA2_Channel4, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(140): warning:  #223-D: function "DAC_Cmd" declared implicitly
+    DAC_Cmd(DAC_Channel_1, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(146): warning:  #223-D: function "DAC_DMACmd" declared implicitly
+    DAC_DMACmd(DAC_Channel_2, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(149): warning:  #223-D: function "TIM_Cmd" declared implicitly
+    TIM_Cmd(TIM2, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(167): warning:  #223-D: function "RCC_AHBPeriphClockCmd" declared implicitly
+    RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA2, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(167): error:  #20: identifier "RCC_AHBPeriph_DMA2" is undefined
+    RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA2, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(173): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(173): error:  #20: identifier "RCC_APB2Periph_GPIOA" is undefined
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(175): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(175): error:  #20: identifier "RCC_APB1Periph_DAC" is undefined
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(177): error:  #20: identifier "RCC_APB1Periph_TIM2" is undefined
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(188): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+    GPIO_InitTypeDef GPIO_InitStructure;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(193): error:  #20: identifier "GPIO_Pin_4" is undefined
+    GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_4 | GPIO_Pin_5;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(193): error:  #20: identifier "GPIO_Pin_5" is undefined
+    GPIO_InitStructure.GPIO_Pin =  GPIO_Pin_4 | GPIO_Pin_5;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(194): error:  #20: identifier "GPIO_Mode_AIN" is undefined
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c(195): warning:  #223-D: function "GPIO_Init" declared implicitly
+    GPIO_Init(GPIOA, &GPIO_InitStructure);
+Project\STM32F10x_StdPeriph_Examples\DAC\DualModeDMA_SineWave\main.c: 14 warnings, 26 errors
+".\Objects\SineWave.axf" - 26 Error(s), 14 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\D6031\Desktop\STM32F10x_StdPeriph_Lib_V3.5.0\RTE
+  D:\MDK5\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
