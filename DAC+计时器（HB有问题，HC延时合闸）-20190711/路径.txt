@@ -1,1 +1,0 @@
-.\Lib\STM32F10x_StdPeriph_Driver\inc;.\Lib\CMSIS\CM3\CoreSupport;.\Lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm;.\Lib\CMSIS\CM3\DeviceSupport\ST\STM32F10x;.\User
