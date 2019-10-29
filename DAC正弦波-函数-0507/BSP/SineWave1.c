@@ -185,7 +185,7 @@ void SineWave_DMA_Config(void)
 	void SineWave1_Init(u16 Wave1_Fre)
 {
        
-    u16 f1=(u16)(50000000/sizeof(Sine12bit)*2/Wave1_Fre);//计算频率72000000
+    u16 f1=(u16)(50000000/sizeof(DualSine12bit)*2/Wave1_Fre);//计算频率72000000
 //	u16 f1=(u16)(72000000/sizeof(SineWave_Value)*2/Wave1_Fre);//计算频率
 	
 //	SineWave_Data( 256 ,SineWave_Value);     //生成输出正弦波的波形表
